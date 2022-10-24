@@ -8,6 +8,7 @@
 - vue composition api
 - pinia state management
 - fs folder organized
+- daisyui framework support
 
 --- 
 

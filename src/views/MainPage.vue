@@ -22,6 +22,7 @@
         <li>vue composition api</li>
         <li>pinia state management</li>
         <li>fs folder organized</li>
+        <li>daisyui framework support</li>
       </ul>
     </div>
   </div>
