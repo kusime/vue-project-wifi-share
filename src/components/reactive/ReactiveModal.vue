@@ -9,12 +9,12 @@
 
   <!-- Put this part before </body> tag -->
   <input type="checkbox" :id="uuid" class="modal-toggle" />
-  <div class="modal">
-    <div class="modal-box flex justify-center items-center  relative">
+  <div class="modal w-full">
+    <div class="bg-base-200 min-h-screen duration-500 flex justify-center items-center relative w-full">
       <label :for="uuid" class="btn btn-sm btn-circle absolute right-2 top-2"
         >✕</label
       >
-      <slot name="default"></slot>
+      <slot name="default" ></slot>
     </div>
   </div>
 </template>
