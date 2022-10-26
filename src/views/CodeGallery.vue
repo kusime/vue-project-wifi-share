@@ -28,7 +28,6 @@ console.log(online);
   <div
     v-else-if="online === 'online'"
     class="hero min-h-screen"
-    style="background-image: url('src/assets/banner.jpg')"
   >
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
