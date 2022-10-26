@@ -16,12 +16,11 @@
             :value="`WIFI:S:${ssid};T:WPA;P:${password};H:false;;`"
             level="H"
             class="m-auto w-full"
-            :size="size + 100"
+            :size="size + 50"
             id="qrcode"
           />
         </template>
       </ReactiveModal>
-
     </figure>
     <div class="card-body">
       <h2 class="text-md font-bold flex justify-start gap-3 items-center ">
