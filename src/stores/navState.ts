@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 const navState = defineStore("navState", {
   state() {
     return {
-      version: "ver : 0.2",
+      version: "ver : 0.3",
       navTabs: [
         ["CodeGallery", "/gallery"],
         ["AdderPage", "/adder"],
