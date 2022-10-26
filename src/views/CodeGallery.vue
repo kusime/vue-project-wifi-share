@@ -3,12 +3,11 @@ import LayoutCodeUnit from "@/components/layout/LayoutCodeUnit.vue";
 import codeState from "@/stores/codeState";
 import { storeToRefs } from "pinia";
 import LayoutGridCard from "@/components/layout/LayoutGridCard.vue";
-
+import serverState from "@/stores/serverState";
 import LayoutCard from "@/components/layout/LayoutCard.vue";
+
 const code = codeState();
 const { Records } = storeToRefs(code);
-
-import serverState from "@/stores/serverState";
 const { currentServerState: online } = storeToRefs(serverState());
 
 console.log(online);
@@ -18,12 +17,12 @@ console.log(online);
   <LayoutGridCard v-if="Array.isArray(Records) && Records.length !== 0">
     <LayoutCodeUnit
       v-for="record in Records"
-      :key="record.UUID"
+      :key="record['UUID']"
       :size="200"
-      :password="record.PASSWORD"
-      :ssid="record.SSID"
-      :uuid="record.UUID"
-      :date="record.DATE"
+      :password="record['PASSWORD']"
+      :ssid="record['SSID']"
+      :uuid="record['UUID']"
+      :date="record['DATE']"
     />
   </LayoutGridCard>
   <div

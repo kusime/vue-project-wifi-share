@@ -20,10 +20,5 @@
 </template>
 
 <script lang="ts" setup>
-defineProps({
-  uuid: {
-    type: String,
-    required: true,
-  },
-});
+defineProps(["uuid"]);
 </script>

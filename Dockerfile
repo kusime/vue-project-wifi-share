@@ -8,4 +8,4 @@ COPY /nginx/nginx.conf /etc/nginx/nginx.conf
 RUN ls -al /dist
 RUN ls -al /usr/share/nginx/html
 
-EXPOSE PROJECT_PORT
+EXPOSE 8002
