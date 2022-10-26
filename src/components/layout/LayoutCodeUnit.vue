@@ -16,23 +16,23 @@
             :value="`WIFI:S:${ssid};T:WPA;P:${password};H:false;;`"
             level="H"
             class="m-auto w-full"
-            :size="size + 100"
+            :size="size + 50"
             id="qrcode"
           />
         </template>
       </ReactiveModal>
     </figure>
     <div class="card-body">
-      <h2 class="card-title">
-        <div class="badge badge-secondary">SSID :</div>
-        {{ ssid }}
+      <h2 class="text-md font-bold flex justify-start gap-3 items-center ">
+        <div class="badge badge-secondary text-sm">SSID:</div>
+        <div>{{ ssid }}</div>
       </h2>
-      <h2 class="card-title">
-        <div class="badge badge-secondary">PWD :</div>
-        {{ password }}
+      <h2 class="text-xs flex justify-start gap-3 items-center ">
+        <div class="badge badge-secondary">PWD:</div>
+        <div>{{ password }}</div>
       </h2>
       <div class="w-full flex justify-center">
-        <div class="badge badge-outline">Attached At > {{ date }}</div>
+        <div class="badge badge-outline">{{ date }}</div>
       </div>
     </div>
   </div>

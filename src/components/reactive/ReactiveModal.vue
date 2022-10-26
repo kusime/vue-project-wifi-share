@@ -10,7 +10,7 @@
   <!-- Put this part before </body> tag -->
   <input type="checkbox" :id="uuid" class="modal-toggle" />
   <div class="modal">
-    <div class="modal-box relative">
+    <div class="modal-box flex justify-center items-center  relative">
       <label :for="uuid" class="btn btn-sm btn-circle absolute right-2 top-2"
         >✕</label
       >
