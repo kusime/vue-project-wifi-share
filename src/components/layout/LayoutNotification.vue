@@ -12,6 +12,15 @@
         </div>
       </div>
 
+      <div class="" v-if="alert.type === alert.types.success">
+        <div class="alert alert-success shadow-lg">
+          <div>
+            <IconSuccess />
+            <span>{{ message }}</span>
+          </div>
+        </div>
+      </div>
+
       <div class="" v-if="alert.type === alert.types.error">
         <div class="alert alert-error shadow-lg">
           <div>
@@ -25,15 +34,6 @@
         <div class="alert alert-warning shadow-lg">
           <div>
             <IconWarning />
-            <span>{{ message }}</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="" v-if="alert.type === alert.types.success">
-        <div class="alert alert-success shadow-lg">
-          <div>
-            <IconSuccess />
             <span>{{ message }}</span>
           </div>
         </div>
